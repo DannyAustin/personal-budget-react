@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+import './App.scss';
 
 
 import {
@@ -13,11 +13,14 @@ import Hero from './Hero/Hero';
 import HomePage from './HomePage/HomePage';
 import Footer from './Footer/Footer';
 import LoginPage from './LoginPage/LoginPage';
+import ChartComponent from "./components/ChartComponent";
+import D3Chart from "./components/D3Chart";
 
 
 
 function AboutPage() {
   return (
+  <div>
   <Router>
     <Menu />
     <Hero />
@@ -30,6 +33,7 @@ function AboutPage() {
     </div>
     <Footer />
   </Router>
+  </div>
      
   );
 }
