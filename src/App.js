@@ -12,6 +12,7 @@ import Menu from './Menu/Menu';
 import Hero from './Hero/Hero';
 import HomePage from './HomePage/HomePage';
 import Footer from './Footer/Footer';
+import AboutPages from "./AboutPage/AboutPage";
 import LoginPage from './LoginPage/LoginPage';
 import ChartComponent from "./components/ChartComponent";
 import D3Chart from "./components/D3Chart";
@@ -20,20 +21,19 @@ import D3Chart from "./components/D3Chart";
 
 function AboutPage() {
   return (
-  <div>
   <Router>
     <Menu />
     <Hero />
     <div className="App">
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="/about" element={<AboutPages />} />
         <Route path="/login" element={<LoginPage />} />
       </Routes>
     </div>
     <Footer />
   </Router>
-  </div>
+
      
   );
 }
